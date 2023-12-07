@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.box {
+  padding: 20px;
+  border: 2px solid;
+  height: 80px;
+  border-radius: 15px;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  background-color: #777777;
+  color: white;
+  font-size: larger;
+  line-height: 28.8px;
+
+
+}
+
+#number {
+  display: inline-block;
+  animation: countUp 1.5s linear forwards;
+  /* Animation duration: 2 seconds */
+}
+
+@keyframes countUp {
+  from {
+    transform: translatex(50px);
+    /* Start position */
+    opacity: 0;
+  }
+
+  to {
+    transform: translatex(0);
+    /* End position */
+    opacity: 1;
+  }
+}
+
+
+
+
+
+.head {
+  padding: 20px;
+  
+  text-align: center;
+}
+.head p{
+  color: #777777;
+}
+
+.wrapper {
+  width: 100%;
+}
+.center {
+  text-align: center;
+}
+
+.center img {
+  margin: 0 auto; /* This will center the image horizontally */
+  display: block; /* This removes any default inline spacing */
+  transition: 0.5s ;
+}
+.wrapper img{
+  max-width: 40%;
+
+}
+.center img:hover{
+  filter: grayscale(100%);
+  opacity: 0.7;
+}
+.carousel {
+  max-width: 1200px;
+  margin: auto;
+ 
+}
+
+
+
+.branding{
+  padding:15px ;
+  margin: 10px;
+}
+.brand-text h4::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: red;
+  display: block;
+  margin: 5;
+  transition: 0.5s;   
+}
+.brand-text h4:hover::after{
+  width: 100%;
+}
+.brand-text p{
+  font-size: 0.8rem;
+  color: #777777;
+}
