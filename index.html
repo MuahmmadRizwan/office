@@ -13,11 +13,12 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-</head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
 
 <body>
   <br>
-  <div class="container box">
+  <div class="container box" data-aos="fade-right" data-aos-delay="100">
     <div class="row">
 
       <div class="col-lg-3 col-md-6">
@@ -56,21 +57,21 @@
   <!--////////// section-2///////// -->
   <section class="container 2nd-section">
 
-    <div class="head">
+    <div  class="head" data-aos="fade-up" data-aos-delay="50">
       <br>
       <h4><lord-icon src="https://cdn.lordicon.com/fkmafinl.json" trigger="loop" style="width:50px;height:50px">
         </lord-icon>OUR CLIENTS <lord-icon src="https://cdn.lordicon.com/fkmafinl.json" trigger="loop"
           style="width:50px;height:50px">
         </lord-icon></h4>
       <h2>Some of the Clients We've Served</h2>
-    </div>
+    </div>  
   </section>
 
 
 
 
 
-  <div class="wrapper">
+  <div class="wrapper" data-aos="fade-up"  data-aos-delay="100">
     <div class="carousel owl-carousel">
       <div class="center -1">
         <img src="assets/spo10.png" alt="">
@@ -106,7 +107,7 @@
     </div>
   </div>
 
-  <div class="head">
+  <div class="head" data-aos="fade-up" data-aos-delay="50">
     <br>
     <h3><lord-icon src="https://cdn.lordicon.com/fkmafinl.json" trigger="loop" style="width:50px;height:50px">
       </lord-icon>OUR SERVICES <lord-icon src="https://cdn.lordicon.com/fkmafinl.json" trigger="loop"
@@ -116,32 +117,40 @@
     <p>Our strategy includes consistently evolving, to ensure we’re producing <br>
       exceptional SEO for business.</p>
   </div>
-  <div class="container">
+  <div  class="container">
     <div class="row branding">
       <div class="col-lg-3 text-center brand-text">
-        <img width="100%" src="assets/rebranding (1).gif" alt="">
+        <img  data-aos="zoom-in-right" width="100%" src="assets/rebranding (1).gif" alt="">
         <br><br>
-        <h4>BRANDING <br> STRATEGY WORK </h4>
-        <p>Customers identify with specific brands for a variety of reasons and we deep work on it.</p>
+        <div data-aos="zoom-in-up" data-aos-delay="50">
+        <h4  class="floating-text">BRANDING <br> STRATEGY WORK</h4>
+        <p class="floating-text">Customers identify with specific brands for a variety of reasons and we deep work on it.</p>
+      </div>
       </div>
       <div class="col-lg-3 text-center brand-text">
-        <img width="100%" src="assets/Marketing.gif" alt="">
+        <img data-aos="zoom-in-down" width="100%" src="assets/Marketing.gif" alt="">
         <br><br>
-        <h4>DIGITAL <br> MARKETING</h4>
-        <p>Our marketing experts give the priority to each of our customer because their business grow us.</p>
+        <div data-aos="zoom-in-up" data-aos-delay="50">
+       <h4 class="floating-text" >DIGITAL <br> MARKETING</h4>
+        <p class="floating-text">Our marketing experts give the priority to each of our customer because their business grow us.</p>
       </div>
+    </div>
 
       <div class="col-lg-3 text-center brand-text">
-        <img width="100%" src="assets/Programming.gif" alt="">
+        <img data-aos="zoom-in-down" width="100%" src="assets/Programming.gif" alt="">
         <br><br>
-        <h4>WEBSITE DEVELOPMENT</h4>
-        <p>Term website development fall into theme building, customization, custom code and we are best in all.</p>
+        <div   data-aos="zoom-in-up" data-aos-delay="50">
+        <h4 class="floating-text" >WEBSITE DEVELOPMENT</h4>
+        <p  class="floating-text">Term website development fall into theme building, customization, custom code and we are best in all.</p>
       </div>
-      <div class="col-lg-3 text-center brand-text">
-        <img width="100%" src="assets/Mobile UI-UX.gif" alt="">
+    </div>
+      <div class="col-lg-3 text-center brand-text" >
+        <img data-aos="zoom-in-left" width="100%" src="assets/Mobile UI-UX.gif" alt="">
         <br><br>
-        <h4>MOBILE APPS DEVELOPMENT</h4>
-        <p>Best UI/UX designing and custom coding in the mobile apps for iOS and Android are drops of our blood..</p>
+        <div data-aos="zoom-in-up"  data-aos-delay="50">
+        <h4  class="floating-text">MOBILE APPS DEVELOPMENT</h4>
+        <p  class="floating-text">Best UI/UX designing and custom coding in the mobile apps for iOS and Android are drops of our blood..</p>
+      </div>
       </div>
     </div>
   </div>
@@ -150,7 +159,7 @@
 <!-- ///////////footer start//////////// -->
   
 <footer class="footers">
-    <div class="container">
+    <div class="container" data-aos="fade-up"  data-aos-delay="50">
       <br>
       <div class="row">
         <div class="col-lg-3 col-md-12">
@@ -251,6 +260,10 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
   <script src="https://cdn.lordicon.com/lordicon.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="index.js"></script>
 </body>
 
