@@ -21,7 +21,7 @@ var numberContainer = document.querySelector('.numbers');
 function startCounting() {
 var currentNumber = 0;
 var interval = setInterval(function() {
-    if (currentNumber <= 43) {
+    if (currentNumber <= 203) {
         numberContainer.innerHTML = `${currentNumber}+`; // Display number with "+"
         currentNumber += 4; 
     } else {

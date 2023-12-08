@@ -15,7 +15,7 @@
   text-align: center;
   width: 100%;
   height: auto;
-  background-color: #777777;
+  background: linear-gradient(107.2deg, rgb(150, 15, 15) 10.6%, rgb(247, 0, 0) 91.1%);
   color: white;
   font-size: larger;
   line-height: 28.8px;
@@ -92,10 +92,10 @@
   content: '';
   width: 0%;
   height: 2px;
-  background: red;
+  background: #f44336;
   display: block;
-  margin: 5;
-  transition: 0.5s;   
+  margin: auto;
+  transition: 0.5s; 
 }
 .brand-text h4:hover::after{
   width: 100%;
@@ -104,3 +104,101 @@
   font-size: 0.8rem;
   color: #777777;
 }
+.brand-text img:hover{
+  transform: scale(1.1);
+  transition: 0.5s ease ;
+}
+
+/* ///////////////footer////////////////////// */
+.foot-text:hover {
+  color: rgb(0, 255, 0);
+
+}
+
+
+
+.foot-text1 {
+  color: white;
+  font-weight: normal;
+  transition: 0.1s ease;
+}
+
+.foot-text {
+  color: white;
+}
+
+.footers {
+  background: linear-gradient(107.2deg, rgb(150, 15, 15) 10.6%, rgb(247, 0, 0) 91.1%);
+  height: auto;
+  padding: 3%;
+}
+
+.dropdown {
+  color: aliceblue;
+}
+
+.fa-brands:hover {
+  transform: scale(1.5);
+  transition: 0.2s;
+
+}
+
+#icon:hover {
+  transform: scale(1.5);
+  transition: 0.2s;
+
+}
+
+#icon {
+  color: aliceblue;
+  margin: 1%;
+  font-size: 20px;
+}
+
+.fa-brands {
+  color: aliceblue;
+  margin: 1%;
+  font-size: 30px;transition: 0.5s ease;
+}
+.foot-text1::after{
+  content: '';
+  width: 0%;
+  height: 3px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.foot-text1:hover::after{
+  width: 100%;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color:rgba(16, 16, 16, 0.621);
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+
+
+
